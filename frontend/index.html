@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI User Updater</title>
+</head>
+<body>
+  <h1>AI Agent User Updater</h1>
+  <textarea id="input" rows="4" cols="50" placeholder="e.g., Change Alice's role to manager because she got promoted"></textarea>
+  <br/>
+  <button onclick="submit()">Submit</button>
+  <pre id="output"></pre>
+  <script>
+    async function submit() {
+      const text = document.getElementById('input').value;
+      const res = await fetch('http://localhost:3001/api/update-user', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text })
+      });
+      const data = await res.json();
+      document.getElementById('output').textContent = JSON.stringify(data, null, 2);
+    }
+  </script>
+</body>
+</html>

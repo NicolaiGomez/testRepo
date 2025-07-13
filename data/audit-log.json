@@ -1,0 +1,34 @@
+[
+  {
+    "timestamp": "2025-07-13T21:05:16.836Z",
+    "name": "Alice",
+    "field": "role",
+    "oldValue": "engineer",
+    "newValue": "manager",
+    "reason": "promotion",
+    "context": []
+  },
+  {
+    "timestamp": "2025-07-13T21:07:38.883Z",
+    "name": "Alice",
+    "field": "role",
+    "oldValue": "manager",
+    "newValue": "manager",
+    "reason": "User record needs to be updated to manager",
+    "context": [
+      "promotion"
+    ]
+  },
+  {
+    "timestamp": "2025-07-13T21:11:30.729Z",
+    "name": "Alice",
+    "field": "role",
+    "oldValue": "manager",
+    "newValue": "manager",
+    "reason": "promotion",
+    "context": [
+      "promotion",
+      "User record needs to be updated to manager"
+    ]
+  }
+]
