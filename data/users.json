@@ -1,14 +1,14 @@
 [
-    {
-        "id": 1,
-        "name": "Alice",
-        "email": "alice@company.com",
-        "role": "engineer"
-    },
-    {
-        "id": 2,
-        "name": "Bob",
-        "email": "bob@company.com",
-        "role": "designer"
-    }
+  {
+    "id": 1,
+    "name": "Alice",
+    "email": "alice@company.com",
+    "role": "changed"
+  },
+  {
+    "id": 2,
+    "name": "Bob",
+    "email": "bob@company.com",
+    "role": "designer"
+  }
 ]
